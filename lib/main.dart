@@ -37,65 +37,53 @@ class MyApp extends StatelessWidget {
                 fontSize: 18.0,
                 color: Color(0xFF704264),
                 letterSpacing: 2.5,
-                fontWeight: FontWeight.bold,
+                // fontWeight: FontWeight.bold,
               ),),
-              SizedBox(height: 15,),
 
-              Container(
+              SizedBox(height: 15,
+              width: 170.0,
+              child:Divider(
+                color:Color(0xFFb88d7f),
+              )),
+
+              Card(
                 color:Color(0xFFc99a8b),
                 margin: EdgeInsets.symmetric(vertical:10,horizontal: 25 ),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(Icons.call),
-                    SizedBox(width: 10,),
-                    Text('+92 3343499967',
+                child: ListTile(
+                  leading: Icon(Icons.call),
+                  title: Text('+92 3343499967',
                     style: TextStyle(
-                      fontFamily: 'SourceCodePro',
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20.0
+                        fontFamily: 'SourceCodePro',
+                        fontSize: 20.0
                     ),),
-                  ],
                 ),
               ),
 
-              Container(
+              Card(
                 color:Color(0xFFc99a8b),
                 margin: EdgeInsets.symmetric(vertical:10,horizontal: 25 ),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(Icons.email),
-                    SizedBox(width: 10,),
-                    Text('suhaarshad37@gmail.com',
-                      style: TextStyle(
-                          fontFamily: 'SourceCodePro',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20.0
-                      ),),
-                  ],
+                child: ListTile(
+                  leading: Icon(Icons.email) ,
+                 title: Text('suhaarshad37@gmail.com',
+                   style: TextStyle(
+                       fontFamily: 'SourceCodePro',
+                       fontSize: 20.0
+                   ),),
                 ),
               ),
 
-              Container(
+              Card(
                 color:Color(0xFFc99a8b),
                 margin: EdgeInsets.symmetric(vertical:10,horizontal: 20 ),
-                padding: EdgeInsets.all(8),
-                child: Row(
-                  children: [
-                    Icon(Icons.link),
-                    SizedBox(width: 10,),
-                    Text('https://github.com/suhaarshad',
+                child: ListTile(
+                 leading:   Icon(Icons.link),
+                    title:Text('https://github.com/suhaarshad',
                       style: TextStyle(
                           fontFamily: 'SourceCodePro',
-                          fontWeight: FontWeight.bold,
                           fontSize: 18.0
                       ),),
-                  ],
                 ),
               ),
-
-
             ],
           ),
         ),

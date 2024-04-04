@@ -32,11 +32,11 @@ flutter:
   fonts:
     - family: Merienda
       fonts:
-        - asset: fonts/Merienda-VariableFont_wght.ttf
+        - asset: fonts/Merienda-Black.ttf
 
     - family: SourceCodePro
       fonts:
-        - asset: fonts/SourceCodePro-VariableFont_wght.ttf
+        - asset: fonts/SourceCodePro-Regular.ttf
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
